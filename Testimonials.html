@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Anupama Upadhyay</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3749e15723.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="Testimonials">
+    <div class="hero">
+        <h1>Testimonials</h1>
+        <p>These testimonials are just a glimpse of the impactful work Anupama Upadhyay has
+            contributed to the lives of young athletes and achievers. The personalized and holistic
+            approach she brings to each case underscores her commitment to the overall
+            well-being and success of her clients.</p>
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonial">
+        <div class="slide-row" id="slide">
+            <div class="slide-col">
+                <div class="user-text">
+                <p>"Anupama's expertise has been a game-changer for our young cricket players (under
+                    13). Her tailored nutrition plans not only facilitated effective weight loss but also
+                    ensured they maintained optimal athletic performance. We witnessed remarkable
+                    improvements, and our young athletes are now not just lighter on their feet but also
+                    stronger on the field. Anupama's guidance has been invaluable for our budding sports
+                    stars."</p>
+                <h3>Weight Loss for Young Cricket Players</h3>
+            </div>
+            <div class="user-img c">
+                <img src="Images/cricket.jpg">
+            </div>
+        </div>
+            <div class="slide-col">
+                <div class="user-text">
+                <p>"When our 14-year-old daughter aspired to summit the seven highest mountains on
+                    seven continents, we knew her nutrition was key. Anupama's meticulously crafted meal
+                    plans not only fueled her journey but also played a vital role in her becoming the
+                    youngest mountaineer to achieve this remarkable feat. Anupama's dedication to tailoring
+                    nutrition for individual goals is truly commendable."</p>
+                <h3>Youngest Mountaineer's Triumph</h3>
+            </div>
+            <div class="user-img">
+                <img src="Images/mountain.jpg">
+            </div>
+        </div>
+            <div class="slide-col">
+                <div class="user-text">
+                <p>"Anupama's expertise extends beyond the ordinary, as demonstrated in her guidance for
+                    our national-level 16-year-old badminton player with PCOD. Her specialized dietary
+                    advice addressed both health and sports performance needs. Anupama's holistic
+                    approach has not only improved our player's physical well-being but has also positively
+                    impacted her on-court performance. We're grateful for the transformative journey she
+                    has led our athlete through."</p>
+                <h3>PCOD and National-Level Badminton Player</h3>
+            </div>
+            <div class="user-img">
+                <img src="Images/badminton.jpg">
+            </div>
+            </div>
+            
+        </div>
+        </div>
+        
+    </div>
+</div>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/dt_anupama_upadhyay?igsh=MTM2OHBoODFsc3FheQ=="><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anupama-upadhyay-32a703194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by <span class="designer">NMT!</span></p>
+    </div>
+</footer>
+</div>
+
+<script>
+    var btn = document.getElementsByClassName("btn");
+    var slide = document.getElementById("slide");
+
+    btn[0].onclick = function(){
+        slide.style.transform = "translateX(0px)";
+        for(i=0;i<3;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active")
+    }
+    btn[1].onclick = function(){
+        slide.style.transform = "translateX(-800px)";
+        for(i=0;i<3;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active")
+    }
+    btn[2].onclick = function(){
+        slide.style.transform = "translateX(-1600px)";
+        for(i=0;i<3;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active")
+    }
+</script>
+
+</body>
+</html>

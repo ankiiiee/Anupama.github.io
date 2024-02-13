@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3749e15723.js" crossorigin="anonymous"></script>
+    </head>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i>anusupadyay77@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>9619846655</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/dt_anupama_upadhyay?igsh=MTM2OHBoODFsc3FheQ=="><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anupama-upadhyay-32a703194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/dt_anupama_upadhyay?igsh=MTM2OHBoODFsc3FheQ=="><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/anupama-upadhyay-32a703194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+           
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">NMT!</span></p>
+        </div>
+    </footer>
+   
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyagwJP2pY2lvfTBWwY0Bl8yDtfRYh48-0qVOW67z3k1G8oWqqGuod-k5Hr4iMJwbAZ6Q/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Submitted Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            
+          },5000)
+          form.reset()
+        })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    
+    </body>
+    </html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Anupama Upadhyay</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3749e15723.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+      <div id="container">
+        <nav>
+            <img src="Images/Logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h2>Welcome to Anupama Upadhyay's
+                Nutrition Hub
+            </h2>
+            <h1>Your Ultimate Destination <br>for Healthy Living</h1><br>
+            <p>Let's embark on this transformative journey together <br>– where every bite brings you
+                closer to a healthier,<br> more vibrant life. Are you ready for the change?"</p>
+             
+    <div class="btn-container">
+        <button class="nav-btn">Get Started<img src="images/arrow-white.png" alt=""></button>  
+    </div>
+        </div>
+      </div>  
+    </div>
+
+    <!------------About--------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/User1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Anupama!</h1>
+                    <h2>Your Path to Personalized Wellness - </h2>
+                    <p>Welcome to the world of health and well-being guided by Anupama
+                        Upadhyay, an accomplished dietitian with expertise in clinical nutrition and sports
+                        nutrition.With a distinguished educational background and a commitment to client
+                        satisfaction, Anupama brings a wealth of experience to the table.</p>
+                        
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('expertise')">Expertise</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="expertise">
+                            <ul><li><span>An expert in supporting mountain climbers, trekkers, and marathon runners, Anupama
+                                focused on optimizing nutrition for improved physical endurance in challenging outdoor
+                                environments. With a client-centered approach, she actively listened to individual
+                                concerns, adapting dietary recommendations accordingly. Anupama also engaged in
+                                patient education, offering guidance on nutrition, meal planning, and lifestyle
+                                modifications to support recovery and long-term health.
+                                </span></li>
+                                   
+                                <li><span>With years of experience and a strong educational background, She believes in a holistic
+                                    approach to nutrition that considers individual needs, lifestyle, and goals. Whether you
+                                    are managing a specific health condition, aiming for weight loss, or seeking to enhance
+                                    athletic performance, She is there to guide you on your journey.
+                                </span></li>
+                             
+                               <li><span>Throughout her career, Anupama has earned the trust and loyalty of countless clients
+                                    who have experienced the transformative power of her guidance. Her compassionate
+                                    approach, coupled with her depth of knowledge, has made her a beacon of hope for
+                                    those seeking lasting wellness.   
+                                </span></li></ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul><li><span>Post Graduate Diploma in dietetics, Shree Nathibai Damodar Tackersey University,
+                                (SNDT) Juhu Mumbai.
+                                </span></li>
+                                   
+                                <li><span>Nutrition and Exercise for Fitness, Nirmala Niketan college of Home science, Mumbai
+                                    Certificate Course on Diabetes Educator - GDC, Borivali Weight.
+                                </span></li>
+                             
+                               <li><span>Management Specialisation Course, Exercise Science Academy, ACSM Certified.
+                                </span></li>
+                                <li><span>Certification on marathon trainer, American College of Sports Medicine, ACSM Certified.
+                                </span></li>
+                                <li><span>Nutraceuticals and Functional Foods – UGC Online Course Ayurvedic Diet & Nutrition
+                                    Courses - Arogyam Institute.
+                                </span></li>
+                                <li><span>AI and Health - ACSM
+                                </span></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dt_anupama_upadhyay?igsh=MTM2OHBoODFsc3FheQ=="><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/anupama-upadhyay-32a703194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="Testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2024; Designed by <span class="designer">NMT!</span></p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    var btn = document.getElementsByClassName("btn");
+    var slide = document.getElementById("slide");
+
+    btn[0].onclick = function(){
+        slide.style.transform = "translateX(0px)";
+        for(i=0;i<3;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active")
+    }
+    btn[1].onclick = function(){
+        slide.style.transform = "translateX(-800px)";
+        for(i=0;i<3;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active")
+    }
+    btn[2].onclick = function(){
+        slide.style.transform = "translateX(-1600px)";
+        for(i=0;i<3;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+     
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+</script>
+
+
+</body>
+</html>
