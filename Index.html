@@ -1,186 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anupama Upadhyay</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/3749e15723.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <div id="header">
-      <div id="container">
-        <nav>
-            <img src="Images/Logo.webp" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="Testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <h2>Welcome to Anupama Upadhyay's
-                Nutrition Hub
-            </h2>
-            <h1>Your Ultimate Destination <br>for Healthy Living</h1><br>
-            <p>Let's embark on this transformative journey together <br>– where every bite brings you
-                closer to a healthier,<br> more vibrant life. Are you ready for the change?"</p>
-             
-    <div class="btn-container">
-        <button class="nav-btn">Get Started<img src="images/arrow-white.png" alt=""></button>  
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >AnupamaUpadhyay</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </div>  
-    </div>
+        <!--<button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>-->
+      </div>
+    </nav>
+    <!-- navbar ends here -->
 
-    <!------------About--------------------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/User1.webp" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Anupama!</h1>
-                    <h2>Your Path to Personalized Wellness - </h2>
-                    <p>Welcome to the world of health and well-being guided by Anupama
-                        Upadhyay, an accomplished dietitian with expertise in clinical nutrition and sports
-                        nutrition.With a distinguished educational background and a commitment to client
-                        satisfaction, Anupama brings a wealth of experience to the table.</p>
-                        
-                        
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('expertise')">Expertise</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="expertise">
-                            <ul><li><span>An expert in supporting mountain climbers, trekkers, and marathon runners, Anupama
-                                focused on optimizing nutrition for improved physical endurance in challenging outdoor
-                                environments. With a client-centered approach, she actively listened to individual
-                                concerns, adapting dietary recommendations accordingly. Anupama also engaged in
-                                patient education, offering guidance on nutrition, meal planning, and lifestyle
-                                modifications to support recovery and long-term health.
-                                </span></li>
-                                   
-                                <li><span>With years of experience and a strong educational background, She believes in a holistic
-                                    approach to nutrition that considers individual needs, lifestyle, and goals. Whether you
-                                    are managing a specific health condition, aiming for weight loss, or seeking to enhance
-                                    athletic performance, She is there to guide you on your journey.
-                                </span></li>
-                             
-                               <li><span>Throughout her career, Anupama has earned the trust and loyalty of countless clients
-                                    who have experienced the transformative power of her guidance. Her compassionate
-                                    approach, coupled with her depth of knowledge, has made her a beacon of hope for
-                                    those seeking lasting wellness.   
-                                </span></li></ul>
-                        </div>
-
-                        <div class="tab-contents" id="education">
-                            <ul><li><span>Post Graduate Diploma in dietetics, Shree Nathibai Damodar Tackersey University,
-                                (SNDT) Juhu Mumbai.
-                                </span></li>
-                                   
-                                <li><span>Nutrition and Exercise for Fitness, Nirmala Niketan college of Home science, Mumbai
-                                    Certificate Course on Diabetes Educator - GDC, Borivali Weight.
-                                </span></li>
-                             
-                               <li><span>Management Specialisation Course, Exercise Science Academy, ACSM Certified.
-                                </span></li>
-                                <li><span>Certification on marathon trainer, American College of Sports Medicine, ACSM Certified.
-                                </span></li>
-                                <li><span>Nutraceuticals and Functional Foods – UGC Online Course Ayurvedic Diet & Nutrition
-                                    Courses - Arogyam Institute.
-                                </span></li>
-                                <li><span>AI and Health - ACSM
-                                </span></li>
-                            </ul>
-                        </div>
-                </div>
-            </div>
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Welcome to Anupama Upadhyay's
+                 <br /><span class="c-orange">Nutrition Hub</span>
+          </h2>
+          <p class="text-muted">
+            Let's embark on this transformative journey together – where every bite brings you
+              closer to a healthier,more vibrant life. Are you ready for the change?
+          </p>
+          <a href="contact.html"><button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Get Started
+          </button></a>
+          <a href="" class="link ms-4 d-none">See My Work</a>
         </div>
-        <footer>
-            <div class="footerContainer">
-                <div class="socialIcons">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/dt_anupama_upadhyay?igsh=MTM2OHBoODFsc3FheQ=="><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/anupama-upadhyay-32a703194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <div class="footerNav">
-                    <ul>
-                        <li><a href="Index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="Testimonials.html">Testimonials</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-               
-            </div>
-            <div class="footerBottom">
-                <p>Copyright &copy;2024; Designed by <span class="designer">NMT!</span></p>
-            </div>
-        </footer>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/User-removebg-preview.webp" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+  <!-- expertise section starts -->
+  <section class="expertise mt-5" id="service">
+    <div class="heading text-center">
+      <small>Expertise</small>
+      <h3>
+        Your Path to Personalized Wellness <br>Welcome to the world of health and well-being!
+      </h3>
     </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-10 col-md-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img
+              src="images/1.webp"
+              class="w-25 img-fluid img"
+              alt=""
+            />
+          </div>
+          <div class="content mt-3">
+            <h4>Experienced dietitian</h4>
+            <p class="text-muted">
+              Meet Anupama Upadhyay , an experienced dietitian with a robust background in
+              clinical nutrition and sports nutrition.
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img
+              src="images/2.webp"
+              class="w-25 img-fluid img"
+              alt=""
+            />
+          </div>
+          <div class="content mt-3">
+            <h4>Certification in Diabetes Mellitus
+              management</h4>
+            <p class="text-muted">
+              Holding certification in Diabetes Mellitus
+              management, Anupama excels in crafting personalized nutrition plans that go beyond
+              the ordinary. Her dedication to promoting health and wellness is evident in every
+              consultation, where she combines expertise with a compassionate approach.
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img
+              src="images/3.webp"
+              class="w-25 img-fluid img"
+              alt=""
+            />
+          </div>
+          <div class="content mt-3">
+            <h4>Trusted guide</h4>
+            <p class="text-muted">
+                With a keen understanding of individual needs and a commitment to continuous learning,
+                Anupama is your trusted guide on the journey to optimal health. Discover the transformative power of personalized nutrition under her expert guidance.
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- expertise section ends here -->
 
 
+    
 
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3>Blog & Articles</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/Blog1.webp"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Anupama Upadhyay</small
+              ><span class="ms-3">Feb 8,2024</span>
+              <h4 class="card-title">
+                <a href="">"Unlocking the Power of Balanced Nutrition"</a>
+              </h4>
+              <p class="text-muted">
+                Dive into the fundamentals of balanced nutrition and discover how it can be a
+                game-changer for your life.                
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/Blog2.webp"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Anupama Upadhyay</small
+              ><span class="ms-3">Feb 8,2024</span>
+              <h4 class="card-title">
+                <a href="">"Fueling Your Fitness: Nutrition for Athletes"</a>
+              </h4>
+              <p class="text-muted">
+                Explore the intersection of nutrition and athletic performance, with tips for fueling your
+                workouts.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/Blog.webp"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Anupama Upadhyay</small
+              ><span class="ms-3">Feb 8,2024</span>
+              <h4 class="card-title">
+                <a href="">"Beyond Diets: A Holistic Approach to Weight Management"</a>
+              </h4>
+              <p class="text-muted">
+                Learn why a holistic approach goes beyond mere diets and how lifestyle modifications
+                contributes weight management.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/Blog1.webp" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Anupama Upadhyay</small
+                    ><span class="text-muted ms-2">Feb 8,2024</span>
+                  <h4 class="card-title mt-3">"Unlocking the Power of Balanced Nutrition"</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">This article delves into the principles of a well-rounded nutrition strategy, to help you achieve your health and fitness goals without the need for specific brand mentions. Individualized Approach Just as we all have unique fingerprints, our bodies have distinct nutritional needs. A personalized approach to nutrition recognizes that what works for one person may not work for another. It involves understanding your own goals, preferences, and lifestyle to create a nutrition plan tailored to your specific requirements. Whether you aim to lose weight, build muscle, or simply maintain your health, an individualized nutrition plan can help you get there. Balanced and Varied Diet A cornerstone of effective nutrition is a balanced and varied diet. This means including a wide range of nutrients from different food groups. A colorful plate filled with fruits, vegetables, lean proteins, whole grains, and healthy fats is key to ensuring you receive a broad spectrum of essential vitamins and minerals. Avoiding extreme dietary restrictions and embracing diversity in your meals is a sustainable way to meet your nutritional needs. Mindful Eating Eating isn’t just about what’s on your plate; it’s also about how you eat. Mindful eating emphasizes paying attention to your body’s hunger and fullness cues, savoring each bite, and being present during meals. This approach can help prevent overeating, emotional eating, and promote a healthier relationship with food. Portion Control Managing portion sizes is crucial to achieving and maintaining a healthy weight. While it’s important to enjoy your favorite foods, practicing portion control ensures you don’t overindulge. It’s about finding a balance between satisfying your cravings and maintaining a caloric intake that aligns with your goals. Regular Monitoring and Adaptation Nutrition is not static; it evolves with your changing needs, goals, and circumstances. Regularly monitoring your progress and adjusting your nutrition plan accordingly is essential. Whether you’re tracking your food intake, body measurements, or energy levels, this feedback loop allows you to stay on the right path and make necessary modifications. Lifelong Learning Nutrition is a journey, not a destination. It’s about continually learning and adapting to new information and insights. Staying informed about the latest nutritional research and best practices ensures that your nutrition plan remains effective and aligned with your health and wellness goals. In conclusion, prioritizing your nutrition is a significant step toward a healthier and happier life. By embracing individualization, balance, mindfulness, portion control, regular monitoring, and lifelong learning, you can unlock the power of nutrition and embark on a journey toward better health and vitality.
+                </p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/Blog2.webp" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Anupama Upadhyay</small
+                    ><span class="text-muted ms-2 ms-md-0">Feb 8,2024</span>
+                  <h4 class="card-title mt-3">"Fueling Your Fitness: Nutrition for Athletes"</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Proper nutrition is paramount for athletes and active individuals to optimize performance, support recovery, and maintain overall health. In this guide, we'll explore key nutrition tips tailored to meet the unique needs of those leading an active lifestyle.
+                    <br>1. Prioritize Macronutrient Balance<br>
+                    Carbohydrates for Energy: Carbohydrates are the body's primary source of energy. Prioritize complex carbohydrates like whole grains, fruits, and vegetables for sustained energy.
+                    Protein for Muscle Repair: Include lean sources of protein such as poultry, fish, lean meats, beans, and legumes to support muscle repair and growth.
+                    Healthy Fats for Sustained Energy: Incorporate sources of healthy fats like avocados, nuts, seeds, and olive oil to provide sustained energy and support overall health.
+                    <br>2. Timing is Key<br>
+                    Pre-Workout Fuel: Consume a balanced meal or snack that includes carbohydrates, protein, and a small amount of healthy fats 2-3 hours before exercise.
+                    Post-Workout Recovery: Opt for a combination of carbohydrates and protein within 30-60 minutes after exercise to replenish glycogen stores and support muscle recovery.
+                    <br>3. Stay Hydrated<br>
+                    Hydration is Essential: Proper hydration is crucial for maintaining optimal performance. Drink water throughout the day and consider a sports drink with electrolytes during intense or prolonged exercise.
+                    <br>4. Vitamins and Minerals<br>
+                    Micronutrient-Rich Foods: Incorporate a variety of fruits, vegetables, lean proteins, and whole grains to ensure you're getting essential vitamins and minerals for overall health and performance.  
+                    <br>5. Don't Overlook Fiber<br>
+                    Fiber for Digestive Health: Maintain a balanced intake of fiber-rich foods like fruits, vegetables, whole grains, and legumes to support digestive health and nutrient absorption. 
+                    <br>6. Snack Smart<br>
+                    Balanced Snacks: Choose nutrient-dense snacks that combine carbohydrates, protein, and healthy fats to maintain energy levels and support recovery between meals.                
+                    <br>7. Listen to Your Body<br>                    
+                    Honor Hunger and Fullness: Pay attention to your body's cues for hunger and fullness. Eating mindfully can help ensure you're meeting your nutritional needs.                    
+                    <br>8. Address Individual Needs<br>                    
+                    Consider Personalized Nutrition: Individual needs vary based on factors like age, gender, activity level, and specific athletic goals. Consider consulting a registered dietitian for personalized guidance.                    
+                    <br>9. Supplement Wisely<br>                    
+                    Supplement with Caution: While supplements can be beneficial for filling specific nutrient gaps, they should not replace a balanced diet. Consult a healthcare provider or sports nutritionist for personalized recommendations.                    
+                    <br>10. Plan Ahead<br>                    
+                    Meal Prepping for Success: Plan and prepare meals and snacks ahead of time to ensure you have nutritious options readily available, especially during busy training periods.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/Blog.webp" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Anupama Upadhyay</small
+                    ><span class="text-muted ms-2 ms-md-0">Feb 8,2024</span>
+                  <h4 class="card-title mt-3">"Beyond Diets: A Holistic Approach to Weight Management"</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">In a world saturated with fad diets and quick-fix solutions, the pursuit of sustainable weight management often feels like a labyrinth of conflicting advice. What if there was a holistic approach that goes beyond the confines of restrictive regimes and embraces a nourishing journey for your body, mind, and soul? Join me in exploring the liberating concept of ditching diets, as we embark on a transformative path towards lasting weight management that prioritizes holistic well-being over fleeting fixes.
 
+                    <br>The Dieting Dilemma:<br> Escaping the Cycle of Restriction and Guilt
+                    
+                    Diets promise a shortcut to weight loss, but they often leave us trapped in a cycle of restriction and guilt. We unravel the dieting dilemma, exploring how quick fixes fail to address the root causes of weight management challenges. It’s time to break free from the dieting hamster wheel and embark on a journey that fosters a sustainable relationship with food.
+                    
+                    <br>Mindful Eating:<br> Nourishing Your Body and Soul with Intention
+                    
+                    Enter the realm of mindful eating, where each bite becomes a conscious act of nourishment. We explore the principles of mindful eating, from savoring flavors to listening to your body’s hunger and fullness cues. Discover how this approach transcends calorie counting, fostering a deeper connection with your body and transforming your relationship with food.
+                    
+                    <br>Embracing Whole Foods:<br> Fueling Your Body with Nutrient-Rich Choices
+                    
+                    In the age of processed foods and quick fixes, we advocate for the transformative power of whole foods. Dive into the world of nutrient-rich choices that fuel your body, providing sustained energy and nourishment. Learn how embracing a whole-foods approach not only supports weight management but also enhances overall well-being.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-    var btn = document.getElementsByClassName("btn");
-    var slide = document.getElementById("slide");
+   
 
-    btn[0].onclick = function(){
-        slide.style.transform = "translateX(0px)";
-        for(i=0;i<3;i++){
-            btn[i].classList.remove("active");
-        }
-        this.classList.add("active")
-    }
-    btn[1].onclick = function(){
-        slide.style.transform = "translateX(-800px)";
-        for(i=0;i<3;i++){
-            btn[i].classList.remove("active");
-        }
-        this.classList.add("active")
-    }
-    btn[2].onclick = function(){
-        slide.style.transform = "translateX(-1600px)";
-        for(i=0;i<3;i++){
-            btn[i].classList.remove("active");
-        }
-        this.classList.add("active")
-    }
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-     
-     function openmenu(){
-        sidemenu.style.right = "0";
-     }
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
 
-     function closemenu(){
-        sidemenu.style.right = "-200px";
-     }
-</script>
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">"Health Horizons: Journey with Anupama to Your Best Self"
+      </h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="index.html">Home</a>
+        <div class="vr"></div>
+        <a href="service.html">Service</a>
+        <div class="vr"></div>
+        <a href="testimonials.html">Testimonials</a>
+        <div class="vr"></div>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/dt_anupama_upadhyay?igsh=MTM2OHBoODFsc3FheQ=="><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/anupama-upadhyay-32a703194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <hr class="text-muted my-4" />
 
+      <p>Copyright 2024 NMT! | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
 
-</body>
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
 </html>
